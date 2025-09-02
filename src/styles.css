@@ -1,0 +1,692 @@
+/* ========== Global Styles ========== */
+/* can be ommitted because it is the default 
+html {
+    font-size: 16px;
+} 
+*/
+
+/*
+W3C CSS Tutorial and Reference:
+
+https://www.w3schools.com/css/default.asp
+
+https://www.w3schools.com/cssref/index.php
+
+Tips and Tricks
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+https://www.smashingmagazine.com/2018/08/flexbox-display-flex-container/
+https://www.smashingmagazine.com/2018/08/flexbox-alignment/
+https://www.smashingmagazine.com/2018/10/flexbox-use-cases/
+
+Layout:
+
+https://www.w3schools.com/css/css3_flexbox.asp
+https://www.w3schools.com/css/css_grid.asp
+
+Fonts:
+
+https://www.w3schools.com/cssref/css_websafe_fonts.php
+https://www.w3schools.com/cssref/css_fonts_fallbacks.php
+
+Images:
+
+https://www.hosteurope.de/blog/exx-bilder-mit-css-manipulieren/
+https://geekflare.com/de/resize-image-in-html/
+*/
+
+/* w3c advice: box-sizing: border-box; for grid layouts */
+
+* { 
+/*margin: 0;*/ /* there is a default margin for each element set by the user-agent (the browser) https://www.w3schools.com/cssref/index.php */
+  box-sizing: border-box;
+}
+
+/* best practice for responsive design */
+/* scales down but will not extend image size */
+/* but how to size homepage banner image */
+/*
+img { 
+  max-width: 100%; 
+  height: auto;
+}
+*/
+
+.box-sizing-example {
+  background: #C62828;
+  width: 100px; /* box-sizing: content-box; total 100 + 60 + 20, box-sizing: border-box; total always 100 */
+  color: white;
+  padding: 30px;
+  border: 10px solid blue;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; 
+/*  font-family: 'Helvetica Neue', Arial, sans-serif; */
+/*  font-family: Arial, Helvetica, sans-serif; */
+  background-color: #ffffff;
+  color: #424242;
+  line-height: 1.6;
+  max-width: 1000px;
+  margin: 0 auto; /* top and bottom 0, left and right centered in the parent element*/
+  padding: 2rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Merriweather', serif;
+/*  font-family: 'Times New Roman', Times, serif; */ 
+  font-weight: 700;
+  color: #C62828;
+}
+/*
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+*/
+
+/* ========== Header (Not Used Anymore) ========== */
+/*
+header {
+  background: #C62828;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+*/
+
+/* ========== Header ========== */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========== Footer ========== */
+.footer {
+  background-color: #f1f1f1;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ========== Navigation ========== */
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #212121;
+  padding-bottom: 0.2rem;
+  transition: border-color 0.2s;
+}
+
+nav a:hover {
+  color: #C62828;
+  border-bottom: 2px solid #C62828;
+}
+
+/* ========== HomePage Grid Layout ========== */
+
+/* Approach 1: Grid layout with 2 columns and 3 rows
+               Colums 1 takes one third and column 2 two thirds of the available space
+               Each row spans 2 columns and is structured as a flex container
+			   Each flex container contains an image item and a text / React component item
+
+               Configuration: See HomePage.tsx for the <div className="..."> containers
+                              Grid container: Named items			   
+			                      The first 3 lines in .home-grid-layout { grid-template-areas: ... ; }
+							  Flex container:
+							      See section HomePage Flex Container
+								  
+				This approach is deactivated by commenting the <div ....> out in Homepage.tsx.
+				I assume that I could also have done so by taking out the rows in the grid-template-areas property.
+								  
+   Approach 2: Grid layout with 2 colums and 3 rows
+               Colums 1 takes one third and column 2 two thirds of the available space
+               For each row two items are configured one for column 1 and one for column 2
+               The first item contains an image and the second a text / React component	
+
+               Configuration: See HomePage.tsxfor the <div className="..."> containers
+                              Grid container: Named items
+							      The first 3 lines in .home-grid-layout { grid-template-areas: ... ; }
+
+Observation: Approach 2 is easier to implement because you only have to use one concept
+             
+Note: There was one obstacle though that applies to both approaches:
+      The latest post cards get more space on the homepage and are quite big, so I have 
+	  .home-posts-text { transform: scale(0.8); } to make them smaller.
+      Unfortunately the original component box does not change its size, it does NOT follow the transforamtion.
+      You can see that by setting a border to that component.
+	  This results in a "gap" between the image and the posts container which does NOT recur to a gap property set in the grid container.
+	  On contrary you have to set column-gap: 0px; in order not to have a too large gap.
+	  But this comes with a price: Now the normal text boxes sit directly next to their images.
+	  In order to find a solution I also set { transform: scale(0.8); } for them.
+	  In order to compensate the shrinking of the fonts I set font-size: 1.25rem; and (if I remember correctly) set some <h2> to <h1>
+	
+*/
+
+.home-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 'intro intro'
+                       'latest-posts latest-posts'
+					   'over-ons over-ons'
+					   'home-intro-img home-intro-text'
+					   'home-posts-img home-posts-text'
+					   'home-overons-img home-overons-text'
+}
+
+/* == Approach 1 == */
+
+.home-intro {
+  grid-area: intro;
+}
+
+.home-latest-posts {
+   grid-area: latest-posts;
+}	
+
+.home-latest-posts-img {
+  grid-area: latest-post-img;
+}
+
+.home-over-ons {
+  grid-area: over-ons;	
+}
+
+/* == Approach 2 == */
+
+.home-intro-img {
+  grid-area: home-intro-img;
+  align-self: center;
+}
+
+.home-intro-img img {
+  width: 100%; /* Legt eine relative Breite fest */
+  height: auto; /* Behält das Seitenverhältnis bei */
+/*  border: 2px solid green;  */	
+}
+
+.home-intro-text {
+  grid-area: home-intro-text;
+/*  border: 2px solid blue; */
+  align-self: center;    
+}
+
+.home-intro-text  {
+  font-size: 1.25rem;
+  margin-bottom: 15%;
+  transform: scale(0.80);
+}
+
+.home-posts-img {
+  grid-area: home-posts-img;
+  align-self: center;  
+}
+
+.home-posts-img img {
+  width: 100%; /* Legt eine relative Breite fest */
+  height: auto; /* Behält das Seitenverhältnis bei */
+}
+
+.home-posts-text {
+  grid-area: home-posts-text;
+  align-self: center;
+/*  border: 2px solid blue; */
+}
+
+.home-posts-text {
+  transform: scale(0.8);
+}
+
+.home-overons-img {
+  grid-area: home-overons-img;
+  align-self: center;
+}
+
+.home-overons-img img {
+  width: 100%; /* Legt eine relative Breite fest */
+  height: auto; /* Behält das Seitenverhältnis bei */
+/*  border: 2px solid green;  */	
+}
+
+.home-overons-text {
+  grid-area: home-overons-text;
+/*  border: 2px solid blue; */
+  align-self: center;    
+}
+
+.home-overons-text  {
+  font-size: 1.25rem;
+  margin-bottom: 15%;
+  transform: scale(0.80);
+}
+
+/* Observations: 
+   This is strange because now only the second column will be displayed
+   there is no stacking
+   
+   On the other hand because I have
+   .home-overons-img img {
+     width: 100%; 
+     height: auto; 
+  }
+   the size of the image automatically adapts to the column size of the grid column 
+   which does not make stacking a must. The pictures get maximum 1/3 of the space.
+   But I realized that at some point they also disappear completely.
+   
+*/
+
+@media (max-width: 756px) {
+  .home-intro-img { grid-area: 1 / span 2; } /* display: none; */
+  .home-intro-text { grid-area: 2 / span 2; }
+  .home-posts-img { grid-area: 3 / span 2; }  /* display: none; */
+  .home-posts-text { grid-area: 4 / span 2; } 
+  .home-overons-img { grid-area: 5 / span 2; } /* display: none; */
+  .home-overons-text { grid-area: 6 / span 2; }   
+}
+
+/*
+@media (max-width: 600px) {
+  .home-grid-layout {
+    grid-template-columns: 1fr; 
+	grid-template-areas: 'home-intro-text'
+					     'home-posts-text'
+					     'home-overons-img home-overons-text'
+  }
+  
+  .home-intro-img, .home-posts-img, .home-overons-img {
+  display: none;
+  }
+}
+*/
+/* ========== Banner (experimental) ========== */
+
+.bannertest {
+  background-image: url("/images/website.home.banner.zeitenschmiede.1624x812.jpg"); /* Pfad zu Ihrem Bild */
+  background-repeat: repeat-x; /* Bild nur horizontal wiederholen */
+  width: 100%; /* Beispielbreite des Banners */
+  height: 650px; /* Beispielhöhe des Banners */
+}
+
+.banner {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 70%;
+}
+
+.bannerimage {
+/* max-width: 100%;
+height: auto; */
+width: 100%;
+aspect-ratio: 3/2;
+object-fit: cover;
+}
+
+/* ========== Homepage Flex Container ========== */
+.container {
+      display: flex;           /* Aktiviert Flexbox */
+	  flex-direction: row;
+	  flex-wrap: nowrap;
+/*	  flex-flow: row nowrap; */
+/*      background-color: DodgerBlue; */
+/*	  border: 2px solid blue; */
+      justify-content: flex-start; 
+      align-items: center;     /* Zentriert die Elemente vertikal */
+	  column-gap: 0px;
+	  font-size: 1rem;
+    }
+
+.container img {
+  width: 27.5%; /* Legt eine relative Breite fest */
+  height: auto; /* Behält das Seitenverhältnis bei */
+/*  border: 2px solid green; */
+}
+
+.container > p { /* direct children only */
+  font-size: 1.25rem;
+  margin-bottom: 15%;
+/*  border: 2px solid blue;  */
+  transform: scale(0.80);
+}
+
+.container-transform {
+/*	border: 2px solid red; */
+	transform: scale(0.80);
+}
+
+/* ========== Layout Main + Sidebar for BlogPage, CategoryPage, PostPage ========== */
+
+/* == General == */
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* main (3x) + sidebar (1x) */
+  gap: 2rem;
+  margin-top: 2rem;
+/*  max-width: 1200px; */  /* limit width for very large screens */
+/*  margin: 0 auto; */ /* top and bottom margin are 0px, right and left margins are auto */
+/*  border: 2px solid blue; */ /*check box size*/	
+}
+
+.blog-main {
+  background: #fff;
+  padding: 0rem;
+/*  border: 2px solid green; */ /*check box size*/	
+}
+
+.blog-sidebar {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+/*  border: 2px solid red; */ /*check box size*/	
+/*  display: none; */ /* Hiding the sidebar */
+}
+
+/* == General Responsive: stack main + sidebar on smaller screens == */
+
+/* To enable the device mode in Chrome DevTools, click the Toggle Device Toolbar button */
+
+@media (max-width: 1200) {
+	.blog-layout {
+    margin: 2rem auto 0;	/* top margin 2rem, left and right are auto so container gets centered*/
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-layout {
+    grid-template-columns: 1fr; /* only one column */
+  }
+
+  .blog-sidebar {
+    margin-top: 2rem; /* add space between main and sidebar */
+  }
+  
+  .blog-sidebar {
+/*	display: none;  */ /* hide sidebar on smaller screens */
+/*  order: -1;      */ /* Reorder sidebar on mobile, so it appears above posts. */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+}
+
+/* == Sidebar Details == */
+
+.blog-sidebar h3 {
+  margin-bottom: 0.5rem;
+  color: #C62828;
+  font-family: 'Merriweather', serif;
+}
+
+.blog-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.blog-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.blog-sidebar li a {
+  text-decoration: none;
+  color: #212121;
+}
+
+.blog-sidebar li a:hover {
+  color: #C62828;
+}
+
+.blog-sidebar .meta {
+  font-size: 0.8rem;
+  color: #757575;
+}
+
+/* == Sidebar Highlighting ==  */
+
+.blog-sidebar li.active-category a {
+  font-weight: bold;
+  color: #C62828;
+  border-left: 3px solid #C62828;
+  padding-left: 0.5rem;
+}
+
+.blog-sidebar li.active-post a {
+  font-weight: bold;
+  color: #C62828;
+  text-decoration: underline;
+}
+
+/* == More Sidebar Details == */
+
+.sidebar-section {
+/*  border: 2px solid red; */ /*check box size*/
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+  margin-bottom: 0.5rem;
+  color: #C62828;
+  font-family: 'Merriweather', serif;
+}
+
+/* ========== Reusable Card Layout CardHorizontal ========== */
+
+.card-horizontal { /* this is the flex container */
+  display: flex;
+  flex-direction: row; /* default */
+  flex-wrap: nowrap; /* default */
+  justify-content: flex-start; /* default */ /* horizontal alignment of the flex items in their space */
+  align-items: flex-start; /* default is normal or stretch */ /* vertical alignment of the flex items in their space */
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease; /* transition for properties box-shadow and transform */
+  margin-bottom: 1.5rem; 
+/*  column-gap: 20px; */  /* card padding creates the gap */
+}
+
+.card-horizontal:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* box-shadow: 0 4px 12px rgba(198,40,40,0.3); */
+  transform: translateY(-2px); /* transform: scale(1.02; */
+}
+
+.card-horizontal img { /* this is a flex item */
+  margin-top: 0.3rem;
+  max-width: 160px; /* If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size: */
+  height: auto; /* I also had 160px but auto is better on mobile devices (see responsive properties below) In my opinion 160px makes sense when image length is smaller then its height */
+  object-fit: cover;
+  border-right: 1px solid #e0e0e0;
+/*  border: 2px solid red; */ /*check box size*/
+}
+
+.card-info { /* this is another flex item */
+  padding: 1rem;
+  flex: 1; /* take space */
+/*border: 2px solid red;	*/ /* check box size*/
+}
+
+.card-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #212121;
+}
+
+.card-info h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-info h3 a:hover {
+  color: #C62828;
+}
+
+.card-info .meta {
+  font-size: 0.85rem;
+  color: #757575;
+  margin-bottom: 0.5rem;
+}
+
+.card-extra {
+  margin-top: 0.75rem; 
+}
+
+/* == CardHorizontal Responsive == */
+
+@media (max-width: 768px) {
+  .card-horizontal {
+    flex-direction: column;
+  }
+
+  .card-horizontal img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0; 
+  }
+}
+
+@media (min-width: 1400px) {
+
+  .card-horizontal img {
+    width: 200px;
+	height: auto;
+    object-fit: cover;
+    border-right: 1px solid #e0e0e0;
+  }
+}
+
+/* ========== PostPage ========== */
+
+.post-header h2 {
+/*  font-size: 2rem; */ /* follow site design */
+  margin-bottom: 0.5rem;
+  color: #C62828;
+}
+
+.post-header .meta {
+  font-size: 1rem;
+  color: #757575;
+}
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 1rem;
+  color: #424242;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  color: #C62828;
+  letter-spacing: 0.0px; /* keep as a template */
+}
+
+.post-content a {
+  color: #C62828;
+  text-decoration: none;
+  letter-spacing: 0.0px;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FeedBackForm ========== */
+
+.feedback {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.feedback h3 {
+  margin-bottom: 1rem;
+  color: #212121;
+}
+
+.feedback input,
+.feedback textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  background: #fefefe;
+/*  border-color: #C62828;  */
+}
+
+.feedback button {
+  background: #C62828;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.feedback button:hover {
+  background: #a61c1c;
+}
+
+@media (max-width: 768px) {
+	.feedback button {
+	  display:block;
+      min-width:100%;
+	  font-size: 1.2rem;
+	  padding: 1rem;
+	}
+}
+
+.feedback-success {
+	color: green;
+/*	font-weight: bold; */
+}
+
+/* ========== Buttons, Tags, Forms (not in place yet) ========== */
+
+.btn-readmore {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background: #C62828;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.btn-readmore:hover {
+  background: #a61b1b;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee;
+  color: #555;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}

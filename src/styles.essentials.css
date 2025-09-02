@@ -1,0 +1,181 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #fafafa;
+  color: #212121;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  margin: 0 0 1rem 0;
+}
+
+/* ========== Header ========== */
+header {
+  background: #C62828;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ========== Layout (Main + Sidebar) ========== */
+.blog-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-main {
+  background: #fff;
+  padding: 1rem;
+}
+
+.blog-sidebar {
+  background: #fff;
+  padding: 1rem;
+  border-left: 1px solid #eee;
+}
+
+/* Responsive: stack columns on mobile */
+@media (max-width: 768px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    margin-top: 2rem;
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+}
+
+/* ========== Sidebar Highlighting ========== */
+.blog-sidebar li.active-category a {
+  font-weight: bold;
+  color: #C62828;
+  border-left: 3px solid #C62828;
+  padding-left: 0.5rem;
+}
+
+.blog-sidebar li.active-post a {
+  font-weight: bold;
+  color: #C62828;
+  text-decoration: underline;
+}
+
+/* ========== Reusable Card Layout ========== */
+.card-horizontal {
+  display: flex;
+  align-items: flex-start;
+  background: #f5f5f5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.card-horizontal:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+.card-horizontal img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-right: 1px solid #e0e0e0;
+}
+
+.card-info {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: #212121;
+}
+
+.card-info h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-info h3 a:hover {
+  color: #C62828;
+}
+
+.card-info .meta {
+  font-size: 0.85rem;
+  color: #757575;
+  margin-bottom: 0.5rem;
+}
+
+.card-extra {
+  margin-top: 0.75rem;
+}
+
+/* Responsive: stack card vertically */
+@media (max-width: 768px) {
+  .card-horizontal {
+    flex-direction: column;
+  }
+
+  .card-horizontal img {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+}
+
+/* ========== Buttons, Tags, Forms ========== */
+.btn-readmore {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background: #C62828;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.btn-readmore:hover {
+  background: #a61b1b;
+}
+
+.tag {
+  display: inline-block;
+  background: #eee;
+  color: #555;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+}
+
+/* Feedback form */
+.feedback input,
+.feedback textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.feedback button {
+  padding: 0.5rem 1rem;
+  background: #C62828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.feedback button:hover {
+  background: #a61b1b;
+}
