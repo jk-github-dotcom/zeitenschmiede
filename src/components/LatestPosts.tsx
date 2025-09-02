@@ -1,5 +1,5 @@
 import { categories } from "../data/blogData";
-import { Link } from "react-router-dom";
+/*import { Link } from "react-router-dom"; */
 import { CardHorizontal } from "../components/CardHorizontal";
 
 type LatestPostsProps = {

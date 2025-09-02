@@ -1,4 +1,5 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 import { categories } from "../data/blogData";
 import { Sidebar } from "../components/Sidebar";
 import { CardHorizontal } from "../components/CardHorizontal";

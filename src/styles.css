@@ -315,7 +315,7 @@ Note: There was one obstacle though that applies to both approaches:
 /* ========== Banner (experimental) ========== */
 
 .bannertest {
-  background-image: url("/images/website.home.banner.zeitenschmiede.1624x812.jpg"); /* Pfad zu Ihrem Bild */
+  background-image: url("/images/banner/zeitenschmiede.1624x812.jpg"); 
   background-repeat: repeat-x; /* Bild nur horizontal wiederholen */
   width: 100%; /* Beispielbreite des Banners */
   height: 650px; /* Beispielhöhe des Banners */
