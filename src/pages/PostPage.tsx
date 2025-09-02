@@ -17,7 +17,7 @@ function PostPage() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const webhookApiKey = "";
+/*  const webhookApiKey = ""; */ /* vercel reports scope issue */
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

@@ -21,7 +21,7 @@ function getLatestPosts(limit: number) {
 }
 
 export function LatestPosts({ numberOfPosts }: LatestPostsProps) { 
-  const latestPosts = getLatestPosts(numberOfPosts);
+  const latestPosts = getLatestPosts(numberOfPosts ?? 7);
 	
   return (
     <div>
