@@ -78,7 +78,67 @@ export function Header({ title }) {
 ## Step 6 – Fetching Data
 
 
+## Additional Libraries
+```
+check dependencies in package.json
+
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.8.1"
+	
+npm install ... (additional libraries)
+```
+## N8N workflow for feedback processing
+```
+N8N 2025-08-22 BlogPostFeedback
+```
+```
+Create workflow and add authorization header
+```
+## Environment variables in .env and .env.example
+```
+VITE_FEEDBACK_WEBHOOK_URL=YOUR_FEEDBACK_WEBHOOK_URL
+VITE_FEEDBACK_WEBHOOK_API_KEY=YOUR_FEEDBACK_WEBHOOK_API_KEY
+```
+## Run locally
+```
+npm run dev
+```
+
+Access via [http://localhost:5371](https://localhost:5371)
+
+## Deployment
+
+### Check whether build is ready for production
+```
+npm run build
+```
+
+### Create a github repository
+
+Check [https://github.com/jk-github-dotcom/zeitenschmiede.git](https://github.com/jk-github-dotcom/zeitenschmiede.git)
+
 
 ```
-npm install react-markdown
+edit .gitignore
+in order to exclude .env and files/folders that you do not want to be exported to github
 ```
+
+```
+git init
+git remote add origin https://github.com/jk-github-dotcom/zeitenschmiede.git
+git add .
+git commit "Initial commit: Blog Zeitenschmiede"
+git branch -M main
+git push -u origin main
+```
+
+### Create a Vercel project, bind to github repository, set environment variables and build and deploy on Vercel
+
+Check [https://vercel.com/mahanski/zeitenschmiede](https://vercel.com/mahanski/zeitenschmiede)
+
+### Run remote
+
+Run [https://zeitenschmiede.vercel.app/](https://zeitenschmiede.vercel.app/)

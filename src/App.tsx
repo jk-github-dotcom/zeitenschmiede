@@ -15,7 +15,7 @@ function App() {
 	{/*
    	<div className="box-sizing-example"><p>hallo</p></div>
 	*/}
-	  <Header title={"Zeitenschmiede"} />
+	  <Header title="Zeitenschmiede" />
       <nav className="nav">
         <Link to="/">Home</Link> | <Link to="/blog">Blog</Link> | <Link to="/about">About</Link>
       </nav>
