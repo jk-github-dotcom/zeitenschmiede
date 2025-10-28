@@ -1,0 +1,112 @@
+https://cdn.contentful.com/spaces/svs95upr5oe8/environments/master/entries?access_token=vgYq197ts6wfdpV1hnW7V_p5f9Q7gVYQq76U034p9Wo&content_type=category&fields.slug=smartphones-and-socialmedia
+
+Get the sys.id of that category in order to get all posts with that category by fields.category.sys.id=3Qo12GZasLlt3b38d0wpGB
+
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "svs95upr5oe8"
+          }
+        },
+        "id": "3Qo12GZasLlt3b38d0wpGB",
+        "type": "Entry",
+        "createdAt": "2025-09-08T11:37:29.392Z",
+        "updatedAt": "2025-10-23T18:55:48.818Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "category"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "id": "smartphones_and_socialmedia",
+        "name": "Smartphones & Social Media",
+        "description": "The impact of smartphones and social media on our mental health",
+        "image": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "kUA2PZKXGtN1eLh0nWtXo"
+          }
+        },
+        "slug": "smartphones-and-socialmedia"
+      }
+    }
+  ],
+  "includes": {
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "kUA2PZKXGtN1eLh0nWtXo",
+          "type": "Asset",
+          "createdAt": "2025-09-08T11:37:09.853Z",
+          "updatedAt": "2025-09-08T11:37:09.853Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Smartphones and Social Media",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/kUA2PZKXGtN1eLh0nWtXo/043972b9e94d8fb9070a817265b6489c/smartphones_and_socialmedia.160x160.jpg",
+            "details": {
+              "size": 12739,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "smartphones_and_socialmedia.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

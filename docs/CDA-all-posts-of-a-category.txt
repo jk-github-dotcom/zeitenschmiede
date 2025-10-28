@@ -1,0 +1,647 @@
+https://cdn.contentful.com/spaces/svs95upr5oe8/environments/master/entries?access_token=vgYq197ts6wfdpV1hnW7V_p5f9Q7gVYQq76U034p9Wo&content_type=category&fields.slug=smartphones-and-socialmedia
+
+https://cdn.contentful.com/spaces/svs95upr5oe8/environments/master/entries?access_token=vgYq197ts6wfdpV1hnW7V_p5f9Q7gVYQq76U034p9Wo&content_type=post&fields.category.sys.id=3Qo12GZasLlt3b38d0wpGB
+
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "svs95upr5oe8"
+          }
+        },
+        "id": "3Qo12GZasLlt3b38d0wpGB",
+        "type": "Entry",
+        "createdAt": "2025-09-08T11:37:29.392Z",
+        "updatedAt": "2025-10-23T18:55:48.818Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "revision": 2,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "category"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "id": "smartphones_and_socialmedia",
+        "name": "Smartphones & Social Media",
+        "description": "The impact of smartphones and social media on our mental health",
+        "image": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "kUA2PZKXGtN1eLh0nWtXo"
+          }
+        },
+        "slug": "smartphones-and-socialmedia"
+      }
+    }
+  ],
+  "includes": {
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "kUA2PZKXGtN1eLh0nWtXo",
+          "type": "Asset",
+          "createdAt": "2025-09-08T11:37:09.853Z",
+          "updatedAt": "2025-09-08T11:37:09.853Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Smartphones and Social Media",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/kUA2PZKXGtN1eLh0nWtXo/043972b9e94d8fb9070a817265b6489c/smartphones_and_socialmedia.160x160.jpg",
+            "details": {
+              "size": 12739,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "smartphones_and_socialmedia.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 2,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "svs95upr5oe8"
+          }
+        },
+        "id": "270t8QiQPa84pPEuyR1YPT",
+        "type": "Entry",
+        "createdAt": "2025-09-04T16:44:33.599Z",
+        "updatedAt": "2025-09-08T11:51:03.581Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "We verliezen onze kinderen",
+        "slug": "we-verliezen-onze-kinderen",
+        "content": {
+          "data": {
+
+          },
+          "content": [
+            {
+              "data": {
+
+              },
+              "content": [
+                {
+                  "data": {
+
+                  },
+                  "marks": [],
+                  "value": "In het debatboek [\"Wir verlieren unsere Kinder\"](https://silkemueller.com/bucher/) legt de Duitse schooldirectrice, digitaal ambassadeur en keynote spreker voor digitale ethiek [Silke Müller](https://silkemueller.com/) uit aan welke digitale bedreigingen kinderen worden blootgesteld wanneer ze toegang hebben tot smartphones. Ze roept ouders, leerkrachten en politici op om niet langer de andere kant op te kijken en eindelijk de basis te leggen voor een eigentijdse, waardengerichte mediaopvoeding.\n\nNiet alleen de duur van het gebruik van digitale media is het probleem, maar de inhoud die kinderen consumeren. Zelfs kinderen op de basisschool worden blootgesteld aan beelden van geweld, pornografie en racisme.\n\n“Weet u wat uw kind op zijn smartphone ziet?” Silke Müller stelt deze vraag aan nietsvermoedende ouders tijdens informatiebijeenkomsten op haar school. De foto's, stickers en video's die ze vervolgens laat zien, zijn zo verontrustend dat bijna niemand ernaar kan kijken.\n\nDe meeste ouders gaan ervan uit dat mediaopvoeding betekent dat de schermtijd wordt beperkt - en hebben geen idee dat kinderen nu al beelden te zien krijgen van beestachtige wreedheden tegen dieren, oorlogsmisdaden en seksueel geweld. Verzonden in de klassenchat. Met dramatische gevolgen voor hun psyche.\n\nDe aanzet tot een debat dat al lang gevoerd had moeten worden. Met waardevolle informatie en praktische tips over de technische en educatieve hulpmiddelen die we kunnen gebruiken om onze kinderen te beschermen.\n\nDit interview in de lezingenreeks [“Wiener Stadtgespräch”](https://www.youtube.com/watch?v=ncKvz_cTKy0), dat ze in Wenen gaf op uitnodiging van de Oostenrijkse Kamer van Arbeid, geeft een goed inzicht in haar werk en haar boeken.\n\nMeer gedetailleerde informatie over Silke Müller vind je op haar website [Silke Müller](https://silkemueller.com/).",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "excerpt": "Pleidooi voor een jeugd zonder de bedreigingen van sociale media",
+        "coverImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "3FU6IiugC49DW0QesEGZw8"
+          }
+        },
+        "date": "2025-08-01T00:00+02:00",
+        "author": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4mo82W37bf5aI3JRxmyyc6"
+          }
+        },
+        "id": "smartphones-02",
+        "category": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "3Qo12GZasLlt3b38d0wpGB"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "svs95upr5oe8"
+          }
+        },
+        "id": "280g7rpvL5IbmF1s5tzzfb",
+        "type": "Entry",
+        "createdAt": "2025-09-04T16:38:18.974Z",
+        "updatedAt": "2025-09-08T11:50:42.362Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "revision": 3,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Generatie Angststoornis",
+        "slug": "generatie-angststoornis",
+        "content": {
+          "data": {
+
+          },
+          "content": [
+            {
+              "data": {
+
+              },
+              "content": [
+                {
+                  "data": {
+
+                  },
+                  "marks": [],
+                  "value": "\"Generatie Angststoornis\" is de titel van een boek van Jonathan Haidt waarin hij onderzoekt hoe de opkomst van sociale media in combinatie met smartphones rond 2010 leidde tot een epidemie van psychische aandoeningen bij kinderen en jongeren, zoals depressie, angst, slaapstoornissen, automutilatie en gefragmenteerde opmerkzaamheid.\n\nJonathan David Haidt is een Amerikaans sociaal psycholoog en auteur. Hij is hoogleraar aan de New York University Stern School of Business. Zijn belangrijkste onderzoeksgebieden zijn de psychologie van moraliteit en morele emoties.\n\nWat ik waardeer aan het boek is dat het uitgaat van de ontwikkelingsstadia en behoeften van kinderen en adolescenten en laat zien hoe sociale media dit proces kapen om kinderen en adolescenten op hun platformen te houden en verslaafd te maken.\n\nDus terwijl aan de ene kant de neiging bestaat om kinderen en jongeren in de echte wereld te veel te beschermen, worden ze in de digitale wereld overgelaten aan oncontroleerbare invloeden.\n\nKinderen en jongeren bevinden zich in een situatie waarin ze onder de invloedsfeer van de digitale wereld met hun filters en geënsceneerde influencers niet in staat zijn om bij te benen in de echte wereld. Dit leidt bijna onvermijdelijk tot de hierboven beschreven psychische aandoeningen.\n\nHet is een gigantisch experiment op een hele generatie.\n\nHet boek ziet zichzelf als het startpunt voor een initiatief om deze ontwikkeling een halt toe te roepen en om te keren. De centrale aanbevelingen zijn\n\n- Geen smartphones voor 14 jaar\n\n- Geen sociale media accounts tot 16\n\n- Telefoonvrije scholen\n\n- Veel meer onafhankelijkheid, vrij spel en verantwoordelijkheid in de echte wereld\n\nBij het boek hoort de website ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {
+                    "uri": "https://www.anxiousgeneration.com"
+                  },
+                  "content": [
+                    {
+                      "data": {
+
+                      },
+                      "marks": [],
+                      "value": "The Anxious Generation",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "hyperlink"
+                },
+                {
+                  "data": {
+
+                  },
+                  "marks": [],
+                  "value": " waarop het boek door Jonathan Haidt en zijn team voortdurend wordt bijgewerkt en geactualiseerd en initiatieven worden gebundeld die van de beschreven aanbevelingen een maatschappelijk initiatief maken.",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            },
+            {
+              "data": {
+
+              },
+              "content": [
+                {
+                  "data": {
+
+                  },
+                  "marks": [],
+                  "value": "Jonathan Haidt onderhoudt ook het substack ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {
+                    "uri": "https://www.afterbabel.com/"
+                  },
+                  "content": [
+                    {
+                      "data": {
+
+                      },
+                      "marks": [],
+                      "value": "After Babel",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "hyperlink"
+                },
+                {
+                  "data": {
+
+                  },
+                  "marks": [],
+                  "value": ", waarop ook studies en artikelen over dit onderwerp worden gepubliceerd.",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "excerpt": "The impact of smartphones and social media on our mental health",
+        "coverImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "2ZwwqOE4t3USk3HXpxfTVt"
+          }
+        },
+        "date": "2025-07-15T00:00+02:00",
+        "author": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4mo82W37bf5aI3JRxmyyc6"
+          }
+        },
+        "id": "smartphones-01",
+        "category": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "3Qo12GZasLlt3b38d0wpGB"
+          }
+        }
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "3Qo12GZasLlt3b38d0wpGB",
+          "type": "Entry",
+          "createdAt": "2025-09-08T11:37:29.392Z",
+          "updatedAt": "2025-10-23T18:55:48.818Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 10,
+          "revision": 2,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "category"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "id": "smartphones_and_socialmedia",
+          "name": "Smartphones & Social Media",
+          "description": "The impact of smartphones and social media on our mental health",
+          "image": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "kUA2PZKXGtN1eLh0nWtXo"
+            }
+          },
+          "slug": "smartphones-and-socialmedia"
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "4mo82W37bf5aI3JRxmyyc6",
+          "type": "Entry",
+          "createdAt": "2025-09-04T16:29:47.252Z",
+          "updatedAt": "2025-09-04T16:29:47.252Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "author"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Mahanski",
+          "picture": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4KBIsJZM4Z9AozT9iPdFJ3"
+            }
+          }
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "2ZwwqOE4t3USk3HXpxfTVt",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:27:34.769Z",
+          "updatedAt": "2025-09-04T16:27:34.769Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Generatie-Angststoornis",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/2ZwwqOE4t3USk3HXpxfTVt/d6c7563d07a7f1d9737f1036846a0a42/theanxiousgeneration.jpg",
+            "details": {
+              "size": 8602,
+              "image": {
+                "width": 225,
+                "height": 225
+              }
+            },
+            "fileName": "theanxiousgeneration.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "3FU6IiugC49DW0QesEGZw8",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:43:38.624Z",
+          "updatedAt": "2025-09-04T16:43:38.624Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "We-verliezen-onze-kinderen",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/3FU6IiugC49DW0QesEGZw8/a9a4a9fe9085c51c5579f539cfca7e66/wir_verlieren_unsere_kinder.160x160.jpg",
+            "details": {
+              "size": 11816,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "wir_verlieren_unsere_kinder.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "4KBIsJZM4Z9AozT9iPdFJ3",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:17:58.593Z",
+          "updatedAt": "2025-09-04T16:17:58.593Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 12,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Mahanski",
+          "description": "meandmyfriends",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/4KBIsJZM4Z9AozT9iPdFJ3/d615eabc5281810969d4cf41ce54a663/friends-standard-ag6irc.jpg",
+            "details": {
+              "size": 101194,
+              "image": {
+                "width": 800,
+                "height": 1152
+              }
+            },
+            "fileName": "friends-standard-ag6irc.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "kUA2PZKXGtN1eLh0nWtXo",
+          "type": "Asset",
+          "createdAt": "2025-09-08T11:37:09.853Z",
+          "updatedAt": "2025-09-08T11:37:09.853Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Smartphones and Social Media",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/kUA2PZKXGtN1eLh0nWtXo/043972b9e94d8fb9070a817265b6489c/smartphones_and_socialmedia.160x160.jpg",
+            "details": {
+              "size": 12739,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "smartphones_and_socialmedia.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

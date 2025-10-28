@@ -1,0 +1,49 @@
+https://cdn.contentful.com/spaces/svs95upr5oe8/environments/master/entries/4mo82W37bf5aI3JRxmyyc6?access_token=vgYq197ts6wfdpV1hnW7V_p5f9Q7gVYQq76U034p9Wo
+
+
+{
+  "metadata": {
+    "tags": [],
+    "concepts": []
+  },
+  "sys": {
+    "space": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Space",
+        "id": "svs95upr5oe8"
+      }
+    },
+    "id": "4mo82W37bf5aI3JRxmyyc6",
+    "type": "Entry",
+    "createdAt": "2025-09-04T16:29:47.252Z",
+    "updatedAt": "2025-09-04T16:29:47.252Z",
+    "environment": {
+      "sys": {
+        "id": "master",
+        "type": "Link",
+        "linkType": "Environment"
+      }
+    },
+    "publishedVersion": 3,
+    "revision": 1,
+    "contentType": {
+      "sys": {
+        "type": "Link",
+        "linkType": "ContentType",
+        "id": "author"
+      }
+    },
+    "locale": "en-US"
+  },
+  "fields": {
+    "name": "Mahanski",
+    "picture": {
+      "sys": {
+        "type": "Link",
+        "linkType": "Asset",
+        "id": "4KBIsJZM4Z9AozT9iPdFJ3"
+      }
+    }
+  }
+}

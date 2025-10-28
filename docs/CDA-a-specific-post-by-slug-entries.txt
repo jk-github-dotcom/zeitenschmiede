@@ -1,0 +1,100 @@
+
+
+
+    "Entry": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "3Qo12GZasLlt3b38d0wpGB",
+          "type": "Entry",
+          "createdAt": "2025-09-08T11:37:29.392Z",
+          "updatedAt": "2025-10-23T18:55:48.818Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 10,
+          "revision": 2,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "category"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "id": "smartphones_and_socialmedia",
+          "name": "Smartphones & Social Media",
+          "description": "The impact of smartphones and social media on our mental health",
+          "image": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "kUA2PZKXGtN1eLh0nWtXo"
+            }
+          },
+          "slug": "smartphones-and-socialmedia"
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "4mo82W37bf5aI3JRxmyyc6",
+          "type": "Entry",
+          "createdAt": "2025-09-04T16:29:47.252Z",
+          "updatedAt": "2025-09-04T16:29:47.252Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 3,
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "author"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Mahanski",
+          "picture": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4KBIsJZM4Z9AozT9iPdFJ3"
+            }
+          }
+        }
+      }
+    ],

@@ -1,0 +1,108 @@
+https://cdn.contentful.com/spaces/svs95upr5oe8/environments/master/entries?access_token=vgYq197ts6wfdpV1hnW7V_p5f9Q7gVYQq76U034p9Wo&content_type=author&fields.name=Mahanski
+
+
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "metadata": {
+        "tags": [],
+        "concepts": []
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "svs95upr5oe8"
+          }
+        },
+        "id": "4mo82W37bf5aI3JRxmyyc6",
+        "type": "Entry",
+        "createdAt": "2025-09-04T16:29:47.252Z",
+        "updatedAt": "2025-09-04T16:29:47.252Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "author"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Mahanski",
+        "picture": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Asset",
+            "id": "4KBIsJZM4Z9AozT9iPdFJ3"
+          }
+        }
+      }
+    }
+  ],
+  "includes": {
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "4KBIsJZM4Z9AozT9iPdFJ3",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:17:58.593Z",
+          "updatedAt": "2025-09-04T16:17:58.593Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 12,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Mahanski",
+          "description": "meandmyfriends",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/4KBIsJZM4Z9AozT9iPdFJ3/d615eabc5281810969d4cf41ce54a663/friends-standard-ag6irc.jpg",
+            "details": {
+              "size": 101194,
+              "image": {
+                "width": 800,
+                "height": 1152
+              }
+            },
+            "fileName": "friends-standard-ag6irc.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

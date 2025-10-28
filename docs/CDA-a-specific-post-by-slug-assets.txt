@@ -1,0 +1,142 @@
+
+
+
+    "Asset": [
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "3FU6IiugC49DW0QesEGZw8",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:43:38.624Z",
+          "updatedAt": "2025-09-04T16:43:38.624Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 7,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "We-verliezen-onze-kinderen",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/3FU6IiugC49DW0QesEGZw8/a9a4a9fe9085c51c5579f539cfca7e66/wir_verlieren_unsere_kinder.160x160.jpg",
+            "details": {
+              "size": 11816,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "wir_verlieren_unsere_kinder.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "4KBIsJZM4Z9AozT9iPdFJ3",
+          "type": "Asset",
+          "createdAt": "2025-09-04T16:17:58.593Z",
+          "updatedAt": "2025-09-04T16:17:58.593Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 12,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Mahanski",
+          "description": "meandmyfriends",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/4KBIsJZM4Z9AozT9iPdFJ3/d615eabc5281810969d4cf41ce54a663/friends-standard-ag6irc.jpg",
+            "details": {
+              "size": 101194,
+              "image": {
+                "width": 800,
+                "height": 1152
+              }
+            },
+            "fileName": "friends-standard-ag6irc.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "metadata": {
+          "tags": [],
+          "concepts": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "svs95upr5oe8"
+            }
+          },
+          "id": "kUA2PZKXGtN1eLh0nWtXo",
+          "type": "Asset",
+          "createdAt": "2025-09-08T11:37:09.853Z",
+          "updatedAt": "2025-09-08T11:37:09.853Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 5,
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Smartphones and Social Media",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/svs95upr5oe8/kUA2PZKXGtN1eLh0nWtXo/043972b9e94d8fb9070a817265b6489c/smartphones_and_socialmedia.160x160.jpg",
+            "details": {
+              "size": 12739,
+              "image": {
+                "width": 160,
+                "height": 160
+              }
+            },
+            "fileName": "smartphones_and_socialmedia.160x160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}
