@@ -142,3 +142,18 @@ Check [https://vercel.com/mahanski/zeitenschmiede](https://vercel.com/mahanski/z
 ### Run remote
 
 Run [https://zeitenschmiede.vercel.app/](https://zeitenschmiede.vercel.app/)
+
+## Enhancement (Manage and retrieve Blog Posts from Contentful)
+
+- Create a copy of the project in React-Vite-Contentful
+
+- What to do with git???
+
+- Install npm package contentful
+
+```
+C:\Users\Gebruiker\Documents\ai4m\React-Vite-Contentful>npm install contentful
+```
+
+- Add Contentful API-keys to .env
+

@@ -158,7 +158,7 @@ nav a:hover {
                For each row two items are configured one for column 1 and one for column 2
                The first item contains an image and the second a text / React component	
 
-               Configuration: See HomePage.tsx for the <div className="..."> containers
+               Configuration: See HomePage.tsxfor the <div className="..."> containers
                               Grid container: Named items
 							      The first 3 lines in .home-grid-layout { grid-template-areas: ... ; }
 
@@ -505,7 +505,7 @@ object-fit: cover;
 
 .card-horizontal:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* box-shadow: 0 4px 12px rgba(198,40,40,0.3); */
-  transform: translateY(-2px); /* transform: scale(1.02); */
+  transform: translateY(-2px); /* transform: scale(1.02; */
 }
 
 .card-horizontal img { /* this is a flex item */
@@ -519,7 +519,7 @@ object-fit: cover;
 
 .card-info { /* this is another flex item */
   padding: 1rem;
-  flexx: 1; /* take space */
+  flex: 1; /* take space */
 /*border: 2px solid red;	*/ /* check box size*/
 }
 
@@ -586,6 +586,24 @@ object-fit: cover;
   color: #757575;
 }
 
+.post-header .post-cover-image {
+  max-width: 100%;
+  border-radius: 8px; 
+  margin-bottom: 1rem;
+}
+/*
+.post-header .author-panel {
+	display: flex; 
+	align-items: center; 
+	margin-bottom: 1rem;
+}
+
+.post-header .author-panel img {
+  max-width: 100%;
+  border-radius: 50%; 
+  margin-right: 0.75rem;
+}
+*/
 .post-content {
   font-size: 1.05rem;
   line-height: 1.8;

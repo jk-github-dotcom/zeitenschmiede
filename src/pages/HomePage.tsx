@@ -58,7 +58,7 @@ function HomePage() {
 		</div>		
 
 		<div className="home-posts-text">
-            <LatestPosts numberOfPosts={7} />
+            <LatestPosts numberOfPosts={4} />
 		</div>
 
         <div className="home-overons-img">

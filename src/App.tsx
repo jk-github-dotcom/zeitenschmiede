@@ -15,7 +15,7 @@ function App() {
 	{/*
    	<div className="box-sizing-example"><p>hallo</p></div>
 	*/}
-	  <Header title="Zeitenschmiede" />
+	  <Header title={"Zeitenschmiede"} />
       <nav className="nav">
         <Link to="/">Home</Link> | <Link to="/blog">Blog</Link> | <Link to="/about">About</Link>
       </nav>
@@ -25,11 +25,11 @@ function App() {
         <Route path="/" element={<HomePage />} />
 		<Route path="/blog" element={<BlogPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/blog/:categoryId" element={<CategoryPage />} />
-		<Route path="/blog/:categoryId/:postId" element={<PostPage />} />
+        <Route path="/blog/:categorySlug" element={<CategoryPage />} />
+		<Route path="/blog/:categorySlug/:postSlug" element={<PostPage />} />
       </Routes>
 	  
-	  <Footer edition="Edition 08-2025" />
+	  <Footer edition="Edition 10-2025" />
     </BrowserRouter>
 	</div>
   );
